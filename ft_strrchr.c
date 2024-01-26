@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strrchr.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: tsurma <tsurma@student.42.fr>              +#+  +:+       +#+        */
+/*   By: tobias <tobias@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/13 12:18:02 by tsurma            #+#    #+#             */
-/*   Updated: 2023/11/27 17:47:25 by tsurma           ###   ########.fr       */
+/*   Updated: 2024/01/26 20:25:43 by tobias           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,4 +29,3 @@ char	*ft_strrchr(const char *s, int c)
 		r = (char *)s + i;
 	return (r);
 }
-

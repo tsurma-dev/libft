@@ -6,7 +6,7 @@
 /*   By: tobias <tobias@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/15 11:26:07 by tsurma            #+#    #+#             */
-/*   Updated: 2024/01/26 20:12:05 by tobias           ###   ########.fr       */
+/*   Updated: 2024/01/26 20:25:03 by tobias           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,7 +16,6 @@
 # include <stdlib.h>
 # include <unistd.h>
 # include <stdarg.h>
-
 
 int		ft_atoi(const char *nptr);
 void	ft_bzero(void *s, size_t n);
