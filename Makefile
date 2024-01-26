@@ -47,7 +47,10 @@ ft_strrchr.c\
 ft_strtrim.c\
 ft_substr.c\
 ft_tolower.c\
-ft_toupper.c
+ft_toupper.c\
+ft_printf.c\
+ft_printf_h.c\
+
 
 OBJ = $(SRC:.c=.o)
 
