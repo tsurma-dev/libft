@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_itoa.c                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: tsurma <tsurma@student.42.fr>              +#+  +:+       +#+        */
+/*   By: tsurma <tsurma@student.42berlin.de>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/17 16:17:00 by tsurma            #+#    #+#             */
-/*   Updated: 2023/11/22 15:37:25 by tsurma           ###   ########.fr       */
+/*   Updated: 2024/05/18 19:28:46 by tsurma           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -36,6 +36,8 @@ static char	*write_nbr(char *array, int digits, int m, unsigned long t)
 	return (array);
 }
 
+/*Allocates (with malloc) and returns a string representing the integer received
+as an argument.*/
 char	*ft_itoa(int n)
 {
 	signed long	t;
@@ -61,7 +63,3 @@ char	*ft_itoa(int n)
 		array[0] = '-';
 	return (array);
 }
-
-/*Allocates (with malloc(3)) and returns a string
-representing the integer received as an argument.
-Negative numbers must be handled.*/

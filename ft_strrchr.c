@@ -3,22 +3,23 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strrchr.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: tobias <tobias@student.42.fr>              +#+  +:+       +#+        */
+/*   By: tsurma <tsurma@student.42berlin.de>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/13 12:18:02 by tsurma            #+#    #+#             */
-/*   Updated: 2024/01/26 20:25:43 by tobias           ###   ########.fr       */
+/*   Updated: 2024/05/18 19:24:10 by tsurma           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
+/*Finds the last occurrence of char c in the given string. This can be '\0'*/
 char	*ft_strrchr(const char *s, int c)
 {
 	int		i;
 	char	*r;
 
 	i = 0;
-	r = 0;
+	r = NULL;
 	while (s[i])
 	{
 		if (s[i] == (char)c)

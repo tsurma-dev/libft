@@ -3,15 +3,18 @@
 /*                                                        :::      ::::::::   */
 /*   ft_memchr.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: tsurma <tsurma@student.42.fr>              +#+  +:+       +#+        */
+/*   By: tsurma <tsurma@student.42berlin.de>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/15 15:10:03 by tsurma            #+#    #+#             */
-/*   Updated: 2023/11/22 13:10:02 by tsurma           ###   ########.fr       */
+/*   Updated: 2024/05/18 19:08:54 by tsurma           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
+/*Finds the first occurence of a byte, given as an int value in the memory 
+passed by the pointer. Returns a pointer to the byte or NULL if it isn't found.
+*/
 void	*ft_memchr(const void *s, int c, size_t n)
 {
 	size_t			i;

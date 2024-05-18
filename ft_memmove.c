@@ -3,15 +3,16 @@
 /*                                                        :::      ::::::::   */
 /*   ft_memmove.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: tobias <tobias@student.42.fr>              +#+  +:+       +#+        */
+/*   By: tsurma <tsurma@student.42berlin.de>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/15 14:20:12 by tsurma            #+#    #+#             */
-/*   Updated: 2024/01/26 20:24:15 by tobias           ###   ########.fr       */
+/*   Updated: 2024/05/18 19:12:04 by tsurma           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
+/*Similar to memcpy but takes overlapping memory into account*/
 void	*ft_memmove(void *dest, const void *src, size_t n)
 {
 	char		*d;

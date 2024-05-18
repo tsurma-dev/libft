@@ -3,15 +3,16 @@
 /*                                                        :::      ::::::::   */
 /*   ft_putnbr_fd.c                                     :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: tsurma <tsurma@student.42.fr>              +#+  +:+       +#+        */
+/*   By: tsurma <tsurma@student.42berlin.de>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/22 12:53:44 by tsurma            #+#    #+#             */
-/*   Updated: 2023/11/22 16:24:41 by tsurma           ###   ########.fr       */
+/*   Updated: 2024/05/18 19:31:15 by tsurma           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
+/*Outputs the integer ’n’ to the given file descriptor.*/
 void	ft_putnbr_fd(int n, int fd)
 {
 	if (n == -2147483648)

@@ -3,27 +3,23 @@
 /*                                                        :::      ::::::::   */
 /*   ft_bzero.c                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: tsurma <tsurma@student.42.fr>              +#+  +:+       +#+        */
+/*   By: tsurma <tsurma@student.42berlin.de>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/15 15:50:58 by tsurma            #+#    #+#             */
-/*   Updated: 2023/11/24 16:44:35 by tsurma           ###   ########.fr       */
+/*   Updated: 2024/05/18 19:02:37 by tsurma           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
+/*Sets n bytes of the pointed to region to 0*/
 void	ft_bzero(void *s, size_t n)
 {
-	char	*m;
 	size_t	i;
 
 	if (!s)
-	{
-		s = NULL;
 		return ;
-	}
-	m = (char *)s;
 	i = -1;
 	while (++i < n)
-		*(m + i) = '\0';
+		*(unsigned char *)(s + i) = '\0';
 }

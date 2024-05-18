@@ -1,21 +1,26 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_putstr_fd.c                                     :+:      :+:    :+:   */
+/*   ft_free_matrix.c                                   :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: tsurma <tsurma@student.42berlin.de>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/11/20 19:45:45 by tobias            #+#    #+#             */
-/*   Updated: 2024/05/18 19:30:51 by tsurma           ###   ########.fr       */
+/*   Created: 2024/04/03 14:48:24 by tsurma            #+#    #+#             */
+/*   Updated: 2024/05/18 18:52:26 by tsurma           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-/*Outputs the string ’s’ to the given file descriptor.*/
-void	ft_putstr_fd(char *s, int fd)
+/*Frees all pointers in the matrix, and then the pointer itself*/
+void	free_matrix(char **matrix)
 {
-	if (fd < 0)
+	int	i;
+
+	i = -1;
+	if (matrix == NULL)
 		return ;
-	write(fd, s, ft_strlen(s));
+	while (matrix[++i])
+		free(matrix[i]);
+	free(matrix);
 }

@@ -3,15 +3,16 @@
 /*                                                        :::      ::::::::   */
 /*   ft_atoi.c                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: tobias <tobias@student.42.fr>              +#+  +:+       +#+        */
+/*   By: tsurma <tsurma@student.42berlin.de>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/13 13:34:26 by tsurma            #+#    #+#             */
-/*   Updated: 2024/01/26 20:24:07 by tobias           ###   ########.fr       */
+/*   Updated: 2024/05/18 19:35:04 by tsurma           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
+/*Converts the content of the given char array to an int if applicable*/
 int	ft_atoi(const char *nptr)
 {
 	int	i;

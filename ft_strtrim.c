@@ -3,15 +3,17 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strtrim.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: tsurma <tsurma@student.42.fr>              +#+  +:+       +#+        */
+/*   By: tsurma <tsurma@student.42berlin.de>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/17 12:17:55 by tsurma            #+#    #+#             */
-/*   Updated: 2023/11/22 13:15:22 by tsurma           ###   ########.fr       */
+/*   Updated: 2024/05/18 19:27:47 by tsurma           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
+/*Allocates (with malloc(3)) and returns a copy of ’s1’ with the characters
+specified in ’set’ removed from the beginning and the end of the string.*/
 char	*ft_strtrim(char const *s1, char const *set)
 {
 	size_t	dstl;
@@ -34,7 +36,3 @@ char	*ft_strtrim(char const *s1, char const *set)
 	ft_strlcpy(trimmed, &s1[f], (b - f + 2));
 	return (trimmed);
 }
-
-/*Allocates (with malloc(3)) and returns a copy of
-’s1’ with the characters specified in ’set’ removed
-from the beginning and the end of the string.*/

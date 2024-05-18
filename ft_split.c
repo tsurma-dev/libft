@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_split.c                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: tsurma <tsurma@student.42.fr>              +#+  +:+       +#+        */
+/*   By: tsurma <tsurma@student.42berlin.de>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/17 15:16:35 by tsurma            #+#    #+#             */
-/*   Updated: 2023/11/24 18:10:15 by tsurma           ###   ########.fr       */
+/*   Updated: 2024/05/18 19:28:18 by tsurma           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,6 +14,9 @@
 
 static int	wordcount(char const *s, char c);
 
+/*Allocates (with malloc) and returns an array of strings obtained by splitting
+’s’ using the character ’c’ as a delimiter. The array must end with a NULL
+pointer.*/
 char	**ft_split(char const *s, char c)
 {
 	char	**split;
@@ -62,8 +65,3 @@ static int	wordcount(char const *s, char c)
 	}
 	return (wordcount);
 }
-
-/*Allocates (with malloc(3)) and returns an array
-of strings obtained by splitting ’s’ using the
-character ’c’ as a delimiter. The array must end
-with a NULL pointer.*/

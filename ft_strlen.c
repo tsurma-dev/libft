@@ -3,15 +3,16 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strlen.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: tsurma <tsurma@student.42.fr>              +#+  +:+       +#+        */
+/*   By: tsurma <tsurma@student.42berlin.de>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/13 11:20:22 by tsurma            #+#    #+#             */
-/*   Updated: 2023/11/24 15:28:49 by tsurma           ###   ########.fr       */
+/*   Updated: 2024/05/18 19:21:57 by tsurma           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
+/*Returns the length of a given string*/
 size_t	ft_strlen(const char *s)
 {
 	int	i;

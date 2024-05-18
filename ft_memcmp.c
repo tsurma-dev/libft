@@ -3,15 +3,17 @@
 /*                                                        :::      ::::::::   */
 /*   ft_memcmp.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: tobias <tobias@student.42.fr>              +#+  +:+       +#+        */
+/*   By: tsurma <tsurma@student.42berlin.de>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/13 15:44:53 by tsurma            #+#    #+#             */
-/*   Updated: 2023/11/19 22:11:32 by tobias           ###   ########.fr       */
+/*   Updated: 2024/05/18 19:09:53 by tsurma           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
+/*Compares two memory regions for n bytes. Returns 0 if they are the same, 
+nonzero if not.*/
 int	ft_memcmp(const void *s1, const void *s2, size_t n)
 {
 	size_t	i;
