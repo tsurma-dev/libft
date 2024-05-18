@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   libft.h                                            :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: tobias <tobias@student.42.fr>              +#+  +:+       +#+        */
+/*   By: tsurma <tsurma@student.42berlin.de>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/15 11:26:07 by tsurma            #+#    #+#             */
-/*   Updated: 2024/01/26 20:25:03 by tobias           ###   ########.fr       */
+/*   Updated: 2024/05/18 20:13:23 by tsurma           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,6 +20,7 @@
 int		ft_atoi(const char *nptr);
 void	ft_bzero(void *s, size_t n);
 void	*ft_calloc(size_t nmemb, size_t size);
+char	*ft_free_matrix(char **matrix);
 int		ft_isalnum(int c);
 int		ft_isalpha(int c);
 int		ft_isascii(int c);
@@ -53,5 +54,21 @@ int		ft_tolower(int c);
 int		ft_toupper(int c);
 int		ft_printf(const char *input, ...);
 int		ft_crossroads(va_list args, char d, int output);
+char	*get_next_line(int fd);
 
+//get_next_line
+# ifndef BUFFER_SIZE
+#  define BUFFER_SIZE 42
+
+typedef struct all_I_need
+{
+	char	*last;
+	char	*buf;
+	ssize_t	toread;
+	int		lenstore;
+	int		c;
+	int		len;
+}	t_all_I_need;
+
+# endif
 #endif
